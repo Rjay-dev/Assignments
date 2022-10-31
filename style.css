@@ -1,68 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
-body{
-  background-color: hsl(0, 0%, 95%);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-  font-family: 'Lexend Deca', 
-    sans-serif;
-  font-weight: 400;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-.container{
-  max-width: 1440px;
-  margin: 0 auto;
- }
+body {
+    font-family: poppins;
+    background-size: cover;
+    line-height: 1.8;
+}
 
-  .wrapper{
-    display: flex;
-    margin: 2rem;
-    border-radius: 10px;
-    overflow: hidden;
-  }
+.container {
+    background-image: linear-gradient rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75) url("/illustration-purple-space-design-8-768x576.png");
+    max-width: 430px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f1ebff;
+    border-top: 4px solid #000000;
+    border-radius: 1px;
+    color: black;
+}
 
-.box1{
-  background-color: hsl(31, 77%, 52%);
+.wrapper .header h1 {
+    text-align: center;
 }
-.box2{
-  background-color: hsl(184, 100%, 22%);
+
+.wrapper .details {
+    margin-top: 15px;
 }
-.box3{
-  background-color: hsl(179, 100%, 13%);
+
+.wrapper.details label {
+    display: block;
+    color: #000000
 }
-.box1, .box2, .box3{
-  padding: 40px;
+
+.wrapper .details input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: poppins;
 }
-h2{
-  font-family: 'Big Shoulders Display',
-    cursive;
-  text-transform: uppercase;
-  color: hsl(0, 0%, 95%);
-  font-size: 2rem;
+
+.details #color,
+#gender {
+    display: block;
+    margin-top: 15px;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #fff9ed;
+    border-radius: 20px;
+    font-family: poppins;
 }
-p{
-  color: hsla(0, 0%, 100%, 0.75);
+
+.wrapper .button {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #cf728c;
+    color: #fff9ed;
+    cursor: pointer;
+    font-family: poppins;
+    font-size: 15px;
+    transition: 1s;
+    text-align: center;
+    border-radius: 20px;
 }
-a{
-  text-decoration: none;
-  background-color: hsl(0, 0%, 95%);
-  border-radius: 20px;
-  padding: 13px 27px;
-  margin-top: 70px;
-  display: inline-block;
-  border: 2px solid hsl(0, 0%, 95%);
+
+.wrapper .button:hover {
+    background-color: #9b70ff;
+    transition: 1s;
 }
-.box1 > a{
-  color:hsl(31, 77%, 52%);;
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+    color: black;
 }
-.box2 > a{
-  color:hsl(184, 100%, 22%);
-}
-.box3 > a{
-  color:hsl(179, 100%, 13%);
-}
-a:hover{
-  color: hsl(0, 0%, 95%);
-  background-color: transparent;
+
+footer a {
+    color: #6161ff;
 }
